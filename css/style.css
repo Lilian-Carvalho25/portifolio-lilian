@@ -67,14 +67,15 @@ header {
 }
 
 .menu-btn {
-    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    background: rgb(63,48,71);
+    background: linear-gradient(135deg, rgba(63,48,71,1) 48%, rgba(81,113,165,1) 76%);
     box-shadow: 0px 20px 40px #00000070;
-    border: 1px solid #3b3b3b;
-    padding: 8px 10px;
+    padding: 7px 10px;
     border-radius: 100px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 6;
 }
 
 #menu-icon {
@@ -112,11 +113,28 @@ header {
     object-fit: contain;
 }
 
+.home-img img {
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes imgg {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-22px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .home-text span {
     padding: 5px 25px;
-    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
-    box-shadow: 0px 20px 40px #00000070;
-    border: 1px solid #3b3b3b;
+    background: rgb(63,48,71);
+    background: linear-gradient(135deg, rgba(63,48,71,1) 48%, rgba(81,113,165,1) 76%);
+    box-shadow: var(--main-color) 0px 1px 5px;
     border-radius: 100px;
     color: var(--text-color);
     font-weight: 700;
@@ -219,7 +237,30 @@ header {
     }
     
     .navbar {
-        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #2d2d2d;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .navbar a {
+        display: block;
+        color: #c3c3c3;
+        padding: 0px;
+        margin: 0px 0px 20px 0px;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .navbar.open {
+        left: 0;
     }
 
     .home-img {
@@ -268,6 +309,10 @@ header {
 }
 
 @media screen and (max-width:600px) {
+    .container-emphasis {
+        margin-top: 120px;
+    }
+
     .home-text h1 {
         font-size: 3rem;
     }
@@ -283,6 +328,11 @@ header {
 }
 
 @media screen and (max-width:450px) {
+    .container-emphasis {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+
     .home-img {
         width: 380px;
         height: 380px;
@@ -300,6 +350,10 @@ header {
 }
 
 @media screen and (max-width:390px) {
+    .container-emphasis {
+        margin-top: 130px;
+    }
+
     .home-img {
         width: 350px;
         height: 350px;
