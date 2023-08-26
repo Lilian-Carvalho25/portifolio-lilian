@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bg-color: #16181a;
     --text-color: #F4FAFF;
@@ -279,13 +283,13 @@ header {
     width: 280px;
 }
 
-.container-portfolio h2 {
+.container-portfolio h2, .container-contact h2 {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-.container-portfolio h4 {
+.container-portfolio h4, .container-contact h4 {
     color: var(--main-color);
     font-size: 1rem;
     margin-bottom: 0.5rem;
@@ -296,12 +300,12 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .box-projects {
     width: 360px;
     border-radius: 15px;
-    /* border: #F4FAFF solid 1px; */
 }
 .container-content {
     margin-left: 13px;
@@ -372,6 +376,25 @@ header {
     box-shadow: var(--main-color) 0px 1px 15px;
 }
 
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.box-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.box-contact img {
+    margin-bottom: 6px;
+    width: 120px;
+}
+
 @media screen and (max-width:1100px) {
     header {
         padding: 10px 7%;
@@ -414,6 +437,11 @@ header {
 
     .skills {
         flex-wrap: wrap;
+    }
+
+    .portfolio {
+        justify-content: space-around;
+        gap: 60px;
     }
 }
 
@@ -592,7 +620,7 @@ header {
 
 @media screen and (max-width:480px) {
     .container-about-me {
-        margin-top: 80px;
+        margin-top: 200px;
     }
     
     .container-about-me img {
@@ -641,7 +669,7 @@ header {
     }
 
     .container-about-me {
-        margin-top: 100px;
+        margin-top: 180px;
     }
     
     .container-about-me img {
@@ -719,6 +747,25 @@ header {
     .about-me p{
         font-size: 0.8rem;
         width: 350px;
+    }
+}
+
+@media screen and (max-width:378px) {
+    .box-projects {
+        width: 300px;
+    }
+    .box-projects .image-project {
+        height: 10rem;
+    }
+    .box-projects h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+    .box-projects p {
+        width: 280px;
+    }
+    .button-and-icons-container {
+        gap: 15px;
     }
 }
 

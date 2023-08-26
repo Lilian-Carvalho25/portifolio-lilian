@@ -12,10 +12,10 @@
 
         <ul class="navbar">
             <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#container-contact">Contato</a></li>
         </ul>
 
         <div class="menu-btn">
@@ -33,12 +33,12 @@
                 <p>Olá, seja bem vindo(a)! Tenho 18 anos, sou desenvolvedora full-stack Jr e moro em São Paulo. Fique a vontade para conhecer melhor o meu trabalho. </p>
                 <div class="main-bnt">
                     <a href="Meu-currículo.pdf" class="bnt" download>Baixar CV</a>
-                    <a href="#" class="bnt two">Meus projetos</a>
+                    <a href="#portfolio" class="bnt two">Meus projetos</a>
                 </div>
             </div>
             <div class="share">
                 <p>Minhas redes:</p>
-                <div class="social">
+                <div class="social" id="about-me">
                     <a href="https://www.linkedin.com/in/lilian-carvalho-7581a8265/" target="_blank"><img src="img/icon-linkedin.svg" alt="" width="27px"></a>
                     <a href="https://github.com/Lilian-Carvalho25" target="_blank"><img src="img/icon-github.svg" alt="" width="27px"></a>
                     <a href="https://linktr.ee/lilian.csribeiro" target="_blank"><img src="img/icon-linktree.png" alt="" width="28px"></a>
@@ -55,7 +55,7 @@
         <article class="about-me">
             <h4>Quem sou eu?</h4>
             <h2>Lilian Carvalho, desenvolvedora Full-stack Jr.</h2>
-            <p>Cursei desenvolvimento web pelo Senac no ínicio deste ano, e hoje curso Desenvolvimento web Java pelo instituto Proa. Entre as minhas soft skills destaco a minha comunicação efetiva, proatividade, resolução de conflitos etc. </p>
+            <p id="skills">Cursei desenvolvimento web pelo Senac no ínicio deste ano, e hoje curso Desenvolvimento web Java pelo instituto Proa. Entre as minhas soft skills destaco a minha comunicação efetiva, proatividade, resolução de conflitos etc.</p>
         </article>
     </section>
 
@@ -82,7 +82,7 @@
                 <div class="description">
                     <img src="img/icon-banco-de-dados.svg" alt="">
                     <h3>Banco de dados</h3>
-                    <p>SQL e MySQL.</p>
+                    <p id="portfolio">SQL e MySQL.</p>
                 </div>
             </article>
         </div>
@@ -98,9 +98,9 @@
                     <h3>Nutriacess</h3>
                     <p>A Nutriacess é uma plataforma desenvolvida com o objetivo de democratizar o acesso a consultas nutricionais de forma acessível.</p>
                     <div class="button-and-icons-container">
-                        <button class="bnt-project">Ver projeto</button>
-                        <a href=""><img src="img/icon-github.svg" alt="" class="icon-project"></a>
-                        <a href=""><img src="img/icon-figma.svg" alt="" class="icon-project"></a>
+                        <a href="http://nutriacess.com.br/" target="_blank"><button class="bnt-project">Ver projeto</button></a>
+                        <a href="https://github.com/Lilian-Carvalho25/front-nutriacess" target="_blank"><img src="img/icon-github.svg" alt="" class="icon-project"></a>
+                        <a href="https://www.figma.com/file/FNNHvyBxXBNVziRP1AKOd8/Nutriacess%2Fdesktop?type=design&node-id=0%3A1&mode=design&t=pyNbpWf6XgsbzeO5-1" target="_blank"><img src="img/icon-figma.svg" alt="" class="icon-project"></a>
                     </div>
                 </div>
             </article>
@@ -110,9 +110,9 @@
                     <h3>Brasa divina</h3>
                     <p>Brasa divina é um exemplo de site para uma pizzaria real. Nele, o usuário tem a opção de selecionar opções prontas, ou montar sua própria pizza.</p>
                     <div class="button-and-icons-container">
-                        <button class="bnt-project">Ver projeto</button>
-                        <a href=""><img src="img/icon-github.svg" alt="" class="icon-project"></a>
-                        <a href=""><img src="img/icon-figma.svg" alt="" class="icon-project"></a>
+                        <a href="http://brasa-divina.x10.mx/index.php" target="_blank"><button class="bnt-project">Ver projeto</button></a>
+                        <a href="https://github.com/Lilian-Carvalho25/pizzaria-brasa-divina" target="_blank"><img src="img/icon-github.svg" alt="" class="icon-project"></a>
+                        <a href="https://www.figma.com/file/cTKmShxHOqdVNfJ2HXuXdy/Brasa-Divina?type=design&node-id=0%3A1&mode=design&t=GIjG3NN5jcoHcEhc-1" target="_blank"><img src="img/icon-figma.svg" alt="" class="icon-project"></a>
                     </div>
                 </div>
             </article>
@@ -122,9 +122,8 @@
                     <h3>Doe e alimente</h3>
                     <p>O objetivo principal da Doe e alimente é redirecionar doações em dinheiro para projetos e ONGs focados na luta contra a fome no Brasil.</p>
                     <div class="button-and-icons-container">
-                        <button class="bnt-project">Ver projeto</button>
-                        <a href=""><img src="img/icon-github.svg" alt="" class="icon-project"></a>
-                        <a href=""><img src="img/icon-figma.svg" alt="" class="icon-project"></a>
+                        <a href="http://dooe-e-alimente.x10.mx/index.php"><button class="bnt-project">Ver projeto</button></a>
+                        <a href="https://github.com/Lilian-Carvalho25/Doe-e-alimente" target="_blank"><img src="img/icon-github.svg" alt="" class="icon-project"></a>
                     </div>
                 </div>
             </article>
@@ -133,8 +132,25 @@
             <a href="#" class="bnt-all">Todos os projetos <img src="img/arrow-right.svg" alt="" width="10px"></a>
         </article>
     </section>
+
+    <section class="container-contact" id="container-contact">
+        <h4>Ficou interessado(a)?</h4>
+        <h2>Entre em contato</h2>
+        <div class="contact">
+            <article class="box-contact">
+                <img src="img/icon-emaill.svg" alt="">
+                <h3>E-mail:</h3>
+                <a href="mailto:liliancarvalho.developer@gmail.com">Clique aqui</a>
+            </article>
+            <article class="box-contact">
+                <img src="img/icon-linkedinn.svg" alt="">
+                <h3>LinkedIn:</h3>
+                <a href="https://www.linkedin.com/in/lilian-carvalho-7581a8265/" target="_blank">Lilian Carvalho</a>
+            </article>
+        </div>
+    </section>
 </body>
 <script src="js/menu.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/scroll.js"></script>
+<!-- <script src="js/scroll.js"></script> -->
 </html>
