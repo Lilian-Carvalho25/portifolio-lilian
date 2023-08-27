@@ -691,6 +691,22 @@ header {
     }
 }
 
+@media screen and (max-width:414px) {
+    .home-text {
+        margin-left: 10px;
+    }
+    .home-text p {
+        width: 370px;
+    }
+
+    .about-me {
+        margin-left: 6px;
+    }
+    .about-me p {
+        width: 350px;
+    }
+}
+
 @media screen and (max-width:390px) {
     .container-emphasis {
         margin-top: 130px;
@@ -770,6 +786,20 @@ header {
         width: 300px;
         height: 300px;
         margin-bottom: 30px;
+    }
+
+    .home-text {
+        margin-left: 10px;
+    }
+    .home-text p {
+        width: 330px;
+    }
+
+    .about-me {
+        margin-left: 6px;
+    }
+    .about-me p {
+        width: 300px;
     }
 
     .bnt, .two {
