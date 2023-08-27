@@ -367,6 +367,10 @@ header {
     background: #9BC995;
     box-shadow: var(--main-color) 0px 1px 15px;
 }
+.bnt-all:active {
+    background: #9BC995;
+    box-shadow: var(--main-color) 0px 1px 15px;
+}
 
 .contact {
     display: flex;
