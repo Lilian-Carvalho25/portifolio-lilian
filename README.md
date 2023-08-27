@@ -2,7 +2,7 @@
 Aqui você encontra todos os meus projetos, conhece o meu trabalho, além das formas de entrar em contato comigo. 
 
 ## ⚙ Funcionalidades 
-- Páginas lindas, responsiva e bem construída <br>
+- Páginas lindas, responsivas e bem construída <br>
 - Projetos reunidos de uma forma simples, em um só lugar <br>
 - Praticidade. <br> <br>
 
