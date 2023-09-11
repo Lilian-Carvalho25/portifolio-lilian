@@ -273,6 +273,11 @@ header {
     width: 280px;
 }
 
+.container-portfolio {
+    max-width:  1326px;
+    margin: 0 auto;
+}
+
 .container-portfolio h2, .container-contact h2 {
     text-align: center;
     font-size: 1.8rem;
