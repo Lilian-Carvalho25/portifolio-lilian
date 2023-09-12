@@ -6,7 +6,7 @@ Aqui você encontra todos os meus projetos, conhece o meu trabalho, além das fo
 - Projetos reunidos de uma forma simples, em um só lugar <br>
 - Praticidade. <br> <br>
 
-<img src="https://i.imgur.com/8ScQTRE.png" width="600px" />
+<img src="https://i.imgur.com/b99EnYL.png" width="600px" />
 
 ## 🖥️ Tecnologias utilizadas:<br>
 ###
