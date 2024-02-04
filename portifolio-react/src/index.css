@@ -29,6 +29,14 @@ body {
 
 /* RESPONSIVIDADE */
 
+/* MAX-WIDTH */
+
+@media screen and (max-width:1339px ) {
+    .experiences{
+        margin-left: 10rem;
+    }
+}
+
 @media screen and (max-width:1100px) {
     header {
         padding: 10px 7%;
@@ -153,6 +161,22 @@ body {
         font-size: 0.9rem;
         width: 450px;
     }
+    .experiences .timeline-information {
+        padding: 1.2rem 0.6rem;
+        border-left: 2.6rem;
+    }
+    .experiences{
+        margin-left: 7rem;
+    }
+    .experiences h3{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    
+    .experiences p{
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -210,6 +234,17 @@ body {
 @media screen and (max-width:746px) {
     .container-emphasis .home-img {
         margin-top: 50px;
+    }
+    .experiences{
+        margin-left: 5rem;
+    }
+    .experiences h3{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    .experiences p{
+        line-height: 1.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -274,6 +309,29 @@ body {
     }
     .about-me p{
         width: 430px;
+    }
+    .experiences{
+        margin-left: 3rem;
+        padding: 0 3rem 2rem 1.5rem;
+    }
+    .experiences .icons-timeline{ 
+        left: -2.2rem;
+        height:4rem;
+        width: 4rem;
+        border-radius: 50%;
+        line-height: 4rem;
+        font-size: 2rem;
+    }
+    .experiences span {
+        margin-left: 1rem;
+    }
+    .experiences h3{
+        margin-top: 0.9rem;
+        font-size: 1.4rem;
+    }
+    .experiences p{
+        line-height: 1.5rem;
+        font-size: 1rem;
     }
 }
 
