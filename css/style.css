@@ -27,6 +27,8 @@ body {
     overflow-x: hidden;
 }
 
+/* NAVBAR */
+
 header {
     position: fixed;
     top: 0;
@@ -86,6 +88,8 @@ header {
     width: 28px;
     z-index: 6;
 }
+
+/* PARTE DA FOTO */
 
 .container-emphasis {
     display: flex;
@@ -273,6 +277,8 @@ header {
     width: 280px;
 }
 
+/* PROJETOS */
+
 .container-portfolio {
     max-width:  1326px;
     margin: 0 auto;
@@ -398,6 +404,9 @@ header {
 .back-home {
     margin-top: 40px;
 }
+.arrow-back {
+    font-weight: 800;
+}
 
 .container-tags {
     display: flex;
@@ -413,10 +422,6 @@ header {
     text-align: center;
     border-radius: 8px;
     padding: 3px;
-}
-
-.arrow-back {
-    font-weight: 800;
 }
 
 @media screen and (max-width:1100px) {
