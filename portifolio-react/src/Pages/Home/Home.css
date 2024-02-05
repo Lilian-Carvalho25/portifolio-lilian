@@ -226,6 +226,7 @@ header {
     height: 200px;
     padding: 30px 0px;
     margin-bottom: 40px;
+    border-radius: 20px;
 }
 
 .box-skills:hover {
@@ -357,21 +358,88 @@ header {
 
 /* CONTATO */
 
-.contact {
+.container-secondary-contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 50px;
+    max-width: 80%;
     flex-wrap: wrap;
+    margin: 1.4rem auto;
 }
-.box-contact {
+.container-secondary-contact img {
+    width: 400px;
+}
+.forms-contact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    gap: 1.2rem;
 }
-.box-contact img {
-    margin-bottom: 6px;
-    width: 120px;
+.forms-contact input {
+    width: 520px;
+    padding: 10px 12px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: var(--main-color) 2px solid;
+    background-color: #f2f2f2;
+    box-shadow: var(--main-color) 1px 1px 10px;
+}
+.forms-contact textarea {
+    width: 520px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    border: var(--main-color) 2px solid;
+    background-color: #f2f2f2;
+    box-shadow: var(--main-color) 1px 1px 10px;
+}
+.forms-contact button {
+    width: 520px;
+    height: 3rem;
+    background-color: var(--main-color);
+    color: var(--p-font);
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BOTÃO MODO ESCURO */
+
+.fixed-icon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    background-color: #1b1c1d;
+    width: 3rem;
+    height:3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+.fixed-icon:hover {
+    box-shadow: var(--main-color) 1px 1px 30px;
+    transition: 0.9s;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 1rem 0px;
+    font-size: 0.8rem;
+}
+.icons-footer a img {
+    margin: 0.6rem 0;
+    gap: 10px;
 }

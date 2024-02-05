@@ -1,9 +1,18 @@
 import RouterApp from "./routers"
+import { useTheme } from "./ThemeContext";
 
 function App() {
 
+  const { theme } = useTheme();
+
   return (
-    <body>
+    <body style={{
+      background: theme.background,
+      color: theme.text,
+      backgroundImage: theme.backgroundImage,
+      backgroundSize: 'cover',
+      width: '100vw'
+    }}>
       <RouterApp />
     </body>
   )

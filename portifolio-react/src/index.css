@@ -27,13 +27,46 @@ body {
     overflow-x: hidden;
 }
 
+    ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); 
+    border-radius: 3px; 
+  }
+
 /* RESPONSIVIDADE */
+
+@media screen and (min-width:1676px) {
+    .experiences .timeline-information {
+        padding: 1.2rem 0.6rem;
+        border-left: 2.6rem;
+    }
+    .experiences{
+        margin-left: 25rem;
+    }
+}
 
 /* MAX-WIDTH */
 
 @media screen and (max-width:1339px ) {
     .experiences{
         margin-left: 10rem;
+    }
+}
+
+@media screen and (max-width:1149px) {
+    .container-secondary-contact {
+        flex-direction: column-reverse;
+        max-width: 90%;
+        margin: 1.4rem auto;
+    }
+    .container-secondary-contact img {
+        width: 400px;
+        margin-bottom: 1rem;
     }
 }
 
@@ -292,11 +325,11 @@ body {
 
 @media screen and (max-width:550px) {
     .container-emphasis .home-img {
-        margin-top: 90px;
+        margin-top: 0px;
     }
 
     .container-about-me img {
-        margin-top: 70px;
+        margin-top: 0px;
     }
 
     .about-me {
@@ -331,6 +364,20 @@ body {
     }
     .experiences p{
         line-height: 1.5rem;
+        font-size: 1rem;
+    }
+    .forms-contact input {
+        width: 380px;
+        padding: 10px 12px;
+        height: 50px;
+    }
+    .forms-contact textarea {
+        width: 380px;
+        padding: 10px 12px;
+    }
+    .forms-contact button {
+        width: 380px;
+        height: 3rem;
         font-size: 1rem;
     }
 }
@@ -389,6 +436,9 @@ body {
         font-size: 0.8rem;
         width: 420px;
     }
+    .container-secondary-contact img {
+        width: 340px;
+    }
 }
 
 @media screen and (max-width:414px) {
@@ -404,6 +454,19 @@ body {
     }
     .about-me p {
         width: 350px;
+    }
+    .container-secondary-contact img {
+        width: 320px;
+    }
+    .forms-contact input {
+        width: 320px;
+    }
+    .forms-contact textarea {
+        width: 320px;
+    }
+    .forms-contact button {
+        width: 320px;
+
     }
 }
 
