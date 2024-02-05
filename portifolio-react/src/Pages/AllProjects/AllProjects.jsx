@@ -1,8 +1,13 @@
 import "./AllProjects.css";
 import ProjectBox from "../../Components/ProjectBox/ProjectBox";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../ThemeContext";
 
 const AllProjects = () => {
+
+    const { theme } = useTheme();
+    const { toggleTheme } = useTheme();
+
     return(
         <section className="container-portfolio">
         <Link to="/">
@@ -56,6 +61,7 @@ const AllProjects = () => {
         <ProjectBox ImgProject={"projeto-petshop.png"} NameProject={"Petshop"} DescriptionProject={"Aqui, podemos observar uma landing page de um petshop, onde as cores e elementos são colocados de uma forma suave e bem organizada."} SkillsProject1={null} SkillsProject2={null} SkillsProject3={null} SkillsProject4={null} SkillsProject5={null} SiteProject={"https://www.figma.com/proto/HFeLT8s0lWcGM6xjI7KIpN/Atividade05?type=design&node-id=5-2&t=I5VOezEURJ5QX8wG-0&scaling=min-zoom&page-id=0%3A1"} GithubProject={null} GithubProject2={null} FigmaProject={"https://www.figma.com/file/HFeLT8s0lWcGM6xjI7KIpN/Atividade05?type=design&node-id=0%3A1&mode=design&t=I5VOezEURJ5QX8wG-1"}/>
 
         </div>
+        <div className="fixed-icon" onClick={toggleTheme} style={{ background: theme.NavBackground }}><img src="icon-moon-sun.svg" alt="icone de sol e lua" width="30px"></img></div>
         </section>
     )
 }

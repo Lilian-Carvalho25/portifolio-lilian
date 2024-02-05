@@ -1,4 +1,5 @@
 // import React from 'react';
+import ScrollRevealComponent from "../ScrollReveal/ScrollReveal";
 import "./ProjectBox.css";
 
 const ProjectBox = ({
@@ -7,6 +8,7 @@ const ProjectBox = ({
 }) => {
   return (
     <article className="box-projects">
+      <ScrollRevealComponent />
       <img src={ImgProject} alt={NameProject} className="image-project" />
       <div className="container-content">
         <h3>{NameProject}</h3>
