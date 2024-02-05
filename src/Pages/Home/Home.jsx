@@ -1,5 +1,5 @@
 import ProjectBox from "../../Components/ProjectBox/ProjectBox";
-import emailjs, { send } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { useState, useRef } from 'react';
 import "./Home.css";
 import { Link } from "react-router-dom";
@@ -32,7 +32,6 @@ const Home = () => {
         }
       );
   };
-
 
     const { theme } = useTheme();
     const [menuOpen, setMenuOpen] = useState(false);
@@ -182,7 +181,7 @@ const Home = () => {
                                 <input type="text" placeholder="Nome" name="name"></input>
                                 <input type="email" placeholder="Email" name="email"></input>
                                 <textarea placeholder="Mensagem"name="message" rows={7}></textarea>
-                                <button type="submit"value={send}>ENVIAR</button>
+                                <button type="submit">ENVIAR</button>
                                 {success &&
                                 "Mensagem enviada com sucesso!"}
                             </form>

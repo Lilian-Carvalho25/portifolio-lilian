@@ -2,20 +2,20 @@ import RouterApp from "./Routers";
 import { useTheme } from "./ThemeContext";
 
 function App() {
-
   const { theme } = useTheme();
 
   return (
-    <body style={{
+    <div style={{
       background: theme.background,
       color: theme.text,
       backgroundImage: theme.backgroundImage,
       backgroundSize: 'cover',
-      width: '100vw'
+      width: '100vw',
+      minHeight: '100vh'
     }}>
       <RouterApp />
-    </body>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
