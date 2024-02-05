@@ -321,6 +321,9 @@ body {
         font-size: 0.9rem;
         width: 500px;
     }
+    .fixed-icon {
+        display: none;
+    }
 }
 
 @media screen and (max-width:550px) {

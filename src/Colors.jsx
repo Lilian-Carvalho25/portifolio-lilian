@@ -1,6 +1,7 @@
 const lightTheme = {
     text: 'black',
     backgroundImage: 'url("bg-light.jpg")',
+    backgroundColorMobile: '#FFFFF',
     skillsBackground: '#f0e9ff',
     NavBackground: '#d9cafc'
   };
