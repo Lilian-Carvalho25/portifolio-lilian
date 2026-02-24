@@ -5,6 +5,8 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import { useTheme } from "../../ThemeContext";
 import ScrollRevealComponent from "../../Components/ScrollReveal/ScrollReveal";
+import SkillBoxes from "../../Components/SkillBoxes/SkillBoxes";
+import BoxTimeline from "../../Components/BoxTimeline/BoxTimeline";
 
 const Home = () => {
 
@@ -43,6 +45,7 @@ const Home = () => {
 
     return (
             <div>
+                
                 <ScrollRevealComponent />
                 <header style={{ background: theme.NavBackground, color: theme.text }}>
                     <a href="#" className="logo" style={{ color: theme.text }}>Lilian<span>.dev</span></a>
@@ -93,72 +96,55 @@ const Home = () => {
                     </article>
                 </section>
                 <section className="container-skills">
-                    <h2>Minhas Skills</h2>
+                    <h4>Conheça minhas</h4>
+                    <h2>Hard Skills</h2>
                     <div className="skills">
-                        <article className="box-skills" style={{ background: theme.skillsBackground }}>
-                            <div className="description">
-                                <img src="icon-front.svg" alt=""></img>
-                                <h3>Front-end</h3>
-                                <p>HTML, CSS, Javascript, Bootstrap, React e TypeScript.</p>
-                            </div>
-                        </article>
-                        <article className="box-skills" style={{ background: theme.skillsBackground }}>
-                            <div className="description">
-                                <img src="icon-back-end.svg" alt=""></img>
-                                <h3>Back-end</h3>
-                                <p>PHP e Java.</p>
-                            </div>
-                        </article>
-                        <article className="box-skills" style={{ background: theme.skillsBackground }}>
-                            <div className="description">
-                                <img src="icon-banco-de-dados.svg" alt=""></img>
-                                <h3>Banco de dados</h3>
-                                <p id="portfolio">SQL.</p>
-                            </div>
-                        </article>
+                        <div className="superior-skills">
+                            <SkillBoxes ImgSkill={"icon-git.svg"} AltSkill={"Ícone do git"} NameSkill={"GIT"}/>
+                            <SkillBoxes ImgSkill={"icon-html.svg"} AltSkill={"Ícone do html"} NameSkill={"HTML"}/>
+                            <SkillBoxes ImgSkill={"icon-css.svg"} AltSkill={"Ícone do css"} NameSkill={"CSS"}/>
+                            <SkillBoxes ImgSkill={"icon-javascript.svg"} AltSkill={"Ícone do javascript"} NameSkill={"Javascript"}/>
+                            <SkillBoxes ImgSkill={"icon-react.svg"} AltSkill={"Ícone do react"} NameSkill={"React"}/>
+                            <SkillBoxes ImgSkill={"icon-angular.svg"} AltSkill={"Ícone do angular"} NameSkill={"Angular"}/>
+                            <SkillBoxes ImgSkill={"icon-bootstrap.svg"} AltSkill={"Ícone do bootstrap"} NameSkill={"Bootstrap"}/>
+                            <SkillBoxes ImgSkill={"icon-tailwind.svg"} AltSkill={"Ícone do tailwind"} NameSkill={"Tailwind"}/>
+                        </div>
+                        <div className="lower-skills">
+                            <SkillBoxes ImgSkill={"icon-python.svg"} AltSkill={"Ícone do python"} NameSkill={"Python"}/>
+                            <SkillBoxes ImgSkill={"icon-java.svg"} AltSkill={"Ícone do java"} NameSkill={"Java"}/>
+                            <SkillBoxes ImgSkill={"icon-php.svg"} AltSkill={"Ícone do php"} NameSkill={"PHP"}/>
+                            <SkillBoxes ImgSkill={"icon-typescript.svg"} AltSkill={"Ícone do typescript"} NameSkill={"Typescript"}/>
+                            <SkillBoxes ImgSkill={"icon-sql.svg"} AltSkill={"Ícone do sql"} NameSkill={"SQL"}/>
+                            <SkillBoxes ImgSkill={"icon-aws.svg"} AltSkill={"Ícone do aws"} NameSkill={"AWS"}/>
+                            <SkillBoxes ImgSkill={"icon-figma-skills.svg"} AltSkill={"Ícone do figma"} NameSkill={"Figma"}/>
+                            <SkillBoxes ImgSkill={"icon-illustrator.svg"} AltSkill={"Ícone do illustrator"} NameSkill={"Illustrator"}/>
+                        </div>
                     </div>
                 </section>
                 <section className="timeline" id="timeline">
-                    <h4>Saiba mais sobre minha</h4>
-                    <h2>Educação</h2>
-                    <article className="container-timeline">
-                        <div className="box-timeline">
-                            <div className="education">
-                                <div className="experiences">
-                                    <i className="icons-timeline">📚</i>
-                                    <div className="timeline-information">
-                                        <span>2024 - 2026</span>
-                                        <h3 style={{ color: theme.text }}>Análise e desenvolvimento de sistemas</h3>
-                                        <p style={{ color: theme.text }}>Graduação na faculdade IMPACTA que forma profissionais aptos a projetar, analisar, desenvolver e implementar sistemas de informação.</p>
-                                    </div>
-                                </div>
-                                <div className="experiences">
-                                    <i className="icons-timeline">📚</i>
-                                    <div className="timeline-information">
-                                        <span>2023</span>
-                                        <h3 style={{ color: theme.text }}>Desevolvedor Web Java</h3>
-                                        <p style={{ color: theme.text }}>O Proa é um curso focado em empregabilidade, onde o jovem é preparado nos núcleos Técnico e Comportamental. O núcleo técnico desenvolve as competências técnicas do aluno em desenvolvimento Web Full Stack por meio de trabalho em grupo, vivências corporativas, projetos e atividades.</p>
-                                    </div>
-                                </div>
-                                <div className="experiences">
-                                    <i className="icons-timeline">📚</i>
-                                    <div className="timeline-information">
-                                        <span>2023</span>
-                                        <h3 style={{ color: theme.text }}>Fundamentos em AWS</h3>
-                                        <p style={{ color: theme.text }}>Abrangeu uma variedade de tópicos projetados para fornecer uma compreensão básica dos serviços e conceitos essenciais da AWS.</p>
-                                    </div>
-                                </div>
-                                <div className="experiences">
-                                    <i className="icons-timeline">📚</i>
-                                    <div className="timeline-information">
-                                        <span>2023</span>
-                                        <h3 style={{ color: theme.text }}>Desenvolvedor Web</h3>
-                                        <p style={{ color: theme.text }}>Programador web é um curso do Senac com o intuito de formar programadores com a capacidadade e a habilidade de estruturar em Front-end e desenvolver em Back-end, publicando aplicações web.Aqui eu tive o meu primeiro contato com programação e design, e aprendi muito.</p>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="timeline-title">
+                        <div className="box-title-timeline">
+                            <img src="icon-maletinha.png" alt="ícone de uma maleta de trabalho" />
+                            <h4>Experiências</h4>
                         </div>
-                    </article>
+                        <div className="box-title-timeline">
+                            <img src="icon-certificado.png" alt="ícone de um certificado" />
+                            <h4>Educação</h4>
+                        </div>
+                    </div>
+                    <div className="timeline-boxes">
+                        <div className="timeline-boxes-left">
+                            <BoxTimeline TitleTimeline={"2024 - Presente | Itaú Unibanco"} SubtitleTimeline={"DESENVOLVEDORA DE SOFTWARE"} DescriptionTimeline={"Início da jornada como estagiária, atuando com: Python, Django, Angular e diversos serviços AWS."} />
+                            <BoxTimeline TitleTimeline={"2023 - 2023 | Djeli"} SubtitleTimeline={"CEO E CO-FUNDADORA"} DescriptionTimeline={"Atuei como CEO, representando os integrantes como porta voz da startup, além da identidade visual, e os códigos."} />
+                            <BoxTimeline TitleTimeline={"2023 - 2023 | AfroGlow"} SubtitleTimeline={"PO, DESENVOLVEDORA E UI/UX"} DescriptionTimeline={"Gerenciei as tarefas do time, usamos metodologias agéis, fui dev full-stack e trabalhei na identidade visual da startup."} />
+                        </div>
+                        <div className="timeline-boxes-right">
+                            <BoxTimeline TitleTimeline={"2024 - 2026 | Faculdade IMPACTA"} SubtitleTimeline={"A. E DESENVOLVIMENTO DE SISTEMAS"} DescriptionTimeline={"Gradução que forma profissionais aptos a projetar, analisar, desenvolver e implementar sistemas de informação."} />
+                            <BoxTimeline TitleTimeline={"2023 | Instituto Proa"} SubtitleTimeline={"DESENVOLVEDOR WEB JAVA"} DescriptionTimeline={"Curso focado em empregabilidade, onde o jovem é preparado nos núcleos técnico e comportamental."} />
+                            <BoxTimeline TitleTimeline={"2023 | Escola da nuvem"} SubtitleTimeline={"FUNDAMENTOS EM AWS"} DescriptionTimeline={"Tópicos projetados para fornecer uma compreensão básico dos serviços e conceitos essenciais da AWS."} />
+                            <BoxTimeline TitleTimeline={"2023 | Senac"} SubtitleTimeline={"DESENVOLVEDOR WEB"} DescriptionTimeline={"Curso com o intuito de formar programadores com a capacidade de desenvolver em front e back-end"} />
+                        </div>
+                    </div>
                 </section>
                 <section className="container-portfolio" id="portfolio">
                     <h4>Hora de navegar em</h4>

@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     list-style: none;
     text-decoration: none;
 }
@@ -14,11 +14,11 @@ html {
 }
 
 :root {
-    --bg-color: #16181a;
-    --text-color: #F4FAFF;
-    --main-color: #6932f5;
-    --big-font: 4.2rem;
-    --p-font: 1.1rem;
+    --bg-color: #16181a !important;
+    --text-color: #F4FAFF !important;
+    --main-color: #6932f5 !important;
+    --big-font: 4.2rem !important;
+    --p-font: 1.1rem !important;
 }
 
 body {
@@ -67,6 +67,17 @@ body {
     .container-secondary-contact img {
         width: 400px;
         margin-bottom: 1rem;
+    }
+
+    .skills {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1100px;
+        margin: 0 auto;
+        gap: 1.5rem;
+        background-color: red;
     }
 }
 
