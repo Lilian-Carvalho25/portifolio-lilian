@@ -1,0 +1,21 @@
+.box-skills {
+    background-color: #1B1B21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 110px;
+    width: 120px;
+    border-radius: 15px;
+}
+
+.box-skills:hover {
+    box-shadow: var(--main-color) 0px 1px 15px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.box-skills p {
+    margin-top: 5px;
+    font-size: 1rem;
+}

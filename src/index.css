@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     list-style: none;
     text-decoration: none;
 }
@@ -14,11 +14,11 @@ html {
 }
 
 :root {
-    --bg-color: #16181a;
-    --text-color: #F4FAFF;
-    --main-color: #6932f5;
-    --big-font: 4.2rem;
-    --p-font: 1.1rem;
+    --bg-color: #16181a !important;
+    --text-color: #F4FAFF !important;
+    --main-color: #6932f5 !important;
+    --big-font: 4.2rem !important;
+    --p-font: 1.1rem !important;
 }
 
 body {
@@ -58,6 +58,21 @@ body {
     }
 }
 
+@media screen and (max-width:1287px) {
+    .skills {
+    max-width: 1000px;
+    gap: 1rem;
+}
+
+.superior-skills, .lower-skills{
+    gap: 1rem;
+}
+
+.lower-skills {
+    margin-bottom: 3rem;
+}
+}
+
 @media screen and (max-width:1149px) {
     .container-secondary-contact {
         flex-direction: column-reverse;
@@ -67,6 +82,39 @@ body {
     .container-secondary-contact img {
         width: 400px;
         margin-bottom: 1rem;
+    }
+    .skills {
+        width: 90%;
+        max-width: 90%;
+        padding: 0 1.5rem;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: var(--main-color) var(--bg-color);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .superior-skills, .lower-skills {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        width: max-content;
+        min-width: 100%;
+        overflow-x: hidden;
+    }
+    .superior-skills > *, .lower-skills > * {
+        flex: 0 0 auto;
+    }
+    .skills::-webkit-scrollbar {
+        height: 8px;
+    }
+    .skills::-webkit-scrollbar-thumb {
+        background-color: var(--main-color);
+        border-radius: 4px;
+    }
+    .skills::-webkit-scrollbar-track {
+        background-color: var(--bg-color);
     }
 }
 
@@ -113,6 +161,24 @@ body {
     .skills {
         flex-wrap: wrap;
     }
+
+    .timeline-title {
+    margin-top: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+    .timeline-boxes {
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.timeline-boxes-left, .timeline-boxes-right {
+    padding-bottom: 3rem;
+}
 
     .portfolio, .all-portfolio {
         justify-content: space-around;

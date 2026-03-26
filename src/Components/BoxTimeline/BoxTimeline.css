@@ -1,0 +1,19 @@
+.box-timeline {
+    padding: 1.8rem 1rem 1.8rem 1.8rem;
+    background-color: #1F1C2699;
+    width: 500px;
+    border-radius: 15px;
+    margin-left: 1rem;
+}
+
+.box-timeline h4 {
+    color: var(--main-color);
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.box-timeline p {
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+    max-width: 430px;
+}
