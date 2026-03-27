@@ -76,10 +76,12 @@
     transition: all .50s ease;
 }
 .bnt-all:hover {
+    color: #212121;
     background: #9BC995;
     box-shadow: var(--main-color) 0px 1px 15px;
 }
 .bnt-all:active {
+    color: #212121;
     background: #9BC995;
     box-shadow: var(--main-color) 0px 1px 15px;
 }

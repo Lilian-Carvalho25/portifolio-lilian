@@ -16,6 +16,9 @@ const ScrollRevealComponent = () => {
     sr.reveal('.share', { delay: 720, origin: 'bottom' });
     sr.reveal('.home-img', { delay: 750, origin: 'right' });
 
+
+    sr.reveal('.stats-section', { delay: 720, origin: 'left' });
+
     sr.reveal('.about-mee', { delay: 270, origin: 'top' });
     sr.reveal('.container-about-me h4', { delay: 280, origin: 'top' });
     sr.reveal('.container-about-me h2', { delay: 290, origin: 'right' });
@@ -23,6 +26,8 @@ const ScrollRevealComponent = () => {
 
     sr.reveal('.container-skills h2', { delay: 290, origin: 'top' });
     sr.reveal('.skills', { delay: 320, origin: 'left' });
+
+    sr.reveal('.timeline', { delay: 320, origin: 'right' });
 
     sr.reveal('.container-portfolio', { delay: 420, origin: 'left' });
     sr.reveal('.container-contact', { delay: 300, origin: 'top' });
