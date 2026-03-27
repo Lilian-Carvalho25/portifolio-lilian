@@ -17,7 +17,7 @@ html {
     --bg-color: #16181a !important;
     --text-color: #F4FAFF !important;
     --main-color: #6932f5 !important;
-    --big-font: 4.2rem !important;
+    --big-font: 4.6rem !important;
     --p-font: 1.1rem !important;
 }
 
@@ -25,6 +25,11 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+    background-color: #050505;
+    background-image:
+    radial-gradient(circle at 25% 25%, rgba(124, 58, 237, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 80% 10%, rgba(168, 85, 247, 0.12) 0%, transparent 20%),
+    linear-gradient(135deg, #050505, #0f0f1a, #000000);
 }
 
     ::-webkit-scrollbar {
@@ -70,6 +75,15 @@ body {
 
 .lower-skills {
     margin-bottom: 3rem;
+}
+
+.stats-section {
+    max-width: 95%;
+}
+
+.contact-content {
+    border-left: none; 
+    padding-left: 0;   
 }
 }
 
@@ -328,6 +342,13 @@ body {
     .about-me p{
         width: 600px;
     }
+
+    .stats-section {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 18rem;
+    max-width: 100%;
+}
 }
 
 @media screen and (max-width:746px) {
