@@ -1,7 +1,8 @@
 .box-timeline {
-    padding: 1.8rem 1rem 1.8rem 1.8rem;
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
     background-color: #1F1C2699;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 15px;
     margin-left: 1rem;
 }
@@ -21,5 +22,68 @@
 .box-timeline p {
     font-size: 0.9rem;
     margin-top: 0.4rem;
-    max-width: 430px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    .box-timeline {
+        width: 100%;
+        max-width: 320px;
+        padding: 1.2rem 0.8rem;
+        margin-left: 0.5rem;
+    }
+    
+    .box-timeline h4 {
+        font-size: 0.9rem;
+    }
+    
+    .box-timeline h3 {
+        font-size: 1rem;
+    }
+    
+    .box-timeline p {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .box-timeline {
+        width: 100%;
+        max-width: 280px;
+        padding: 1rem 0.6rem;
+        margin-left: 0.3rem;
+    }
+    
+    .box-timeline h4 {
+        font-size: 0.85rem;
+    }
+    
+    .box-timeline h3 {
+        font-size: 0.95rem;
+    }
+    
+    .box-timeline p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .box-timeline {
+        width: 100%;
+        max-width: 250px;
+        padding: 0.8rem 0.5rem;
+        margin-left: 0.2rem;
+    }
+    
+    .box-timeline h4 {
+        font-size: 0.8rem;
+    }
+    
+    .box-timeline h3 {
+        font-size: 0.9rem;
+    }
+    
+    .box-timeline p {
+        font-size: 0.75rem;
+    }
 }

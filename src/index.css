@@ -1,662 +1,1427 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+
+
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
     font-family: 'Poppins', sans-serif !important;
+
     list-style: none;
+
     text-decoration: none;
+
 }
+
+
 
 html {
+
     scroll-behavior: smooth;
+
 }
+
+
 
 :root {
+
     --bg-color: #16181a !important;
+
     --text-color: #F4FAFF !important;
+
     --main-color: #6932f5 !important;
+
     --big-font: 4.6rem !important;
+
     --p-font: 1.1rem !important;
+
 }
+
+
 
 body {
+
     background: var(--bg-color);
+
     color: var(--text-color);
+
     overflow-x: hidden;
+
     background-color: #050505;
+
     background-image:
+
     radial-gradient(circle at 25% 25%, rgba(124, 58, 237, 0.15) 0%, transparent 25%),
+
     radial-gradient(circle at 80% 10%, rgba(168, 85, 247, 0.12) 0%, transparent 20%),
+
     linear-gradient(135deg, #050505, #0f0f1a, #000000);
+
 }
 
+
+
     ::-webkit-scrollbar {
+
     width: 6px;
+
   }
+
   ::-webkit-scrollbar-track {
+
     background-color: var(--bg-color);
+
   }
+
   ::-webkit-scrollbar-thumb {
+
     background-color: var(--main-color); 
+
     border-radius: 3px; 
+
   }
+
+
 
 /* RESPONSIVIDADE */
 
+
+
 @media screen and (min-width:1676px) {
+
     .experiences .timeline-information {
+
         padding: 1.2rem 0.6rem;
+
         border-left: 2.6rem;
+
     }
+
     .experiences{
+
         margin-left: 25rem;
+
     }
+
 }
+
+
 
 /* MAX-WIDTH */
 
+
+
 @media screen and (max-width:1339px ) {
+
     .experiences{
+
         margin-left: 10rem;
+
     }
+
 }
+
+
 
 @media screen and (max-width:1287px) {
+
     .skills {
+
     max-width: 1000px;
+
     gap: 1rem;
+
 }
+
+
 
 .superior-skills, .lower-skills{
+
     gap: 1rem;
+
 }
+
+
 
 .lower-skills {
+
     margin-bottom: 3rem;
+
 }
+
+
 
 .stats-section {
+
     max-width: 95%;
+
 }
+
+
 
 .contact-content {
+
     border-left: none; 
+
     padding-left: 0;   
+
 }
+
 }
+
+
 
 @media screen and (max-width:1149px) {
+
     .container-secondary-contact {
+
         flex-direction: column-reverse;
+
         max-width: 90%;
+
         margin: 1.4rem auto;
+
     }
+
     .container-secondary-contact img {
+
         width: 400px;
+
         margin-bottom: 1rem;
+
     }
+
     .skills {
+
         width: 90%;
+
         max-width: 90%;
+
         padding: 0 1.5rem;
+
         overflow-x: scroll;
+
         -webkit-overflow-scrolling: touch;
+
         scrollbar-width: thin;
+
         scrollbar-color: var(--main-color) var(--bg-color);
+
         display: flex;
+
         flex-direction: column;
+
         gap: 1rem;
+
     }
+
     .superior-skills, .lower-skills {
+
         display: flex;
+
         flex-wrap: nowrap;
+
         gap: 1rem;
+
         width: max-content;
+
         min-width: 100%;
+
         overflow-x: hidden;
+
     }
+
     .superior-skills > *, .lower-skills > * {
+
         flex: 0 0 auto;
+
     }
+
     .skills::-webkit-scrollbar {
+
         height: 8px;
+
     }
+
     .skills::-webkit-scrollbar-thumb {
+
         background-color: var(--main-color);
+
         border-radius: 4px;
+
     }
+
     .skills::-webkit-scrollbar-track {
+
         background-color: var(--bg-color);
+
     }
+
 }
+
+
 
 @media screen and (max-width:1100px) {
+
     header {
+
         padding: 10px 7%;
+
     }
+
+
 
     .home-img {
+
         width: 450px;
+
         height: 450px;
+
     }
+
+
 
     .home-text h1 {
+
         font-size: 3.8rem;
-    }
-    
-    .home-text p {
-        font-size: 1rem;
-        width: 500px;
+
     }
 
-    .container-about-me {
-        margin-top: 30px;
-    }
     
-    .container-about-me img {
-        width: 430px;
-    }
-    .about-me h4{
-        font-size: 0.9rem;
-        margin-bottom: 0.7rem;
-    }
-    
-    .about-me h2{
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    .about-me p{
+
+    .home-text p {
+
         font-size: 1rem;
-        width: 600px;
+
+        width: 500px;
+
     }
+
+
+
+    .container-about-me {
+
+        margin-top: 30px;
+
+    }
+
+    
+
+    .container-about-me img {
+
+        width: 430px;
+
+    }
+
+    .about-me h4{
+
+        font-size: 0.9rem;
+
+        margin-bottom: 0.7rem;
+
+    }
+
+    
+
+    .about-me h2{
+
+        font-size: 1.8rem;
+
+        margin-bottom: 1rem;
+
+    }
+
+    .about-me p{
+
+        font-size: 1rem;
+
+        width: 600px;
+
+    }
+
+
 
     .skills {
+
         flex-wrap: wrap;
+
     }
+
+
 
     .timeline-title {
+
     margin-top: 2.3rem;
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     gap: 3rem;
+
 }
+
+
 
     .timeline-boxes {
+
     justify-content: center;
+
     flex-direction: column;
+
     margin-top: 1rem;
+
 }
+
+
 
 .timeline-boxes-left, .timeline-boxes-right {
+
     padding-bottom: 3rem;
+
 }
+
+
 
     .portfolio, .all-portfolio {
+
         justify-content: space-around;
+
         gap: 60px;
+
     }
+
 }
+
+
 
 @media screen and (max-width:930px) {
+
     .logo {
+
         font-size: 38px;
+
     }
+
+
 
     header {
-        padding: 12px 12%;
+
+        padding: 1rem 5%;
+
     }
+
     
+
     .navbar {
-        position: absolute;
+
+        position: fixed;
+
         width: 100%;
+
         height: 100vh;
-        padding: 40px 50px;
+
+        padding: 6rem 2rem 2rem;
+
         top: 0;
+
         right: 0;
+
         bottom: 0;
+
         left: 100%;
+
         display: flex;
+
         flex-direction: column;
-        background: #2d2d2d;
-        transition: all 0.4s ease-in-out;
+
+        background: rgba(27, 28, 29, 0.98);
+
+        backdrop-filter: blur(20px);
+
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+        gap: 0.5rem;
+
     }
+
+
 
     .navbar a {
+
         display: block;
-        color: #c3c3c3;
-        padding: 0px;
-        margin: 0px 0px 20px 0px;
-        font-size: 1.3rem;
-        font-weight: 400;
+
+        color: var(--text-color);
+
+        padding: 1rem 1.5rem;
+
+        margin: 0;
+
+        font-size: 1.2rem;
+
+        font-weight: 500;
+
+        border-radius: 12px;
+
+        transition: all 0.3s ease;
+
+        background: rgba(105, 50, 245, 0.05);
+
     }
+
+
+
+    .navbar a:hover {
+
+        background: rgba(105, 50, 245, 0.2);
+
+        transform: translateX(10px);
+
+    }
+
+
+
     .navbar.open {
+
         left: 0;
+
     }
+
+
 
     .home-img {
+
         width: 390px;
+
         height: 390px;
+
     }
+
+
 
     .home-text h1 {
+
         font-size: 3rem;
+
     }
+
     
+
     .home-text p {
+
         font-size: 0.9rem;
+
         width: 390px;
+
     }
+
+
 
     .home-text span {
+
         font-size: 12px;
+
     }
 
+
+
     .container-about-me {
+
         margin-top: 20px;
+
     }
+
     
+
     .container-about-me img {
+
         width: 360px;
+
     }
+
     .about-me h4{
+
         font-size: 0.9rem;
+
         margin-bottom: 0.7rem;
+
     }
+
     
+
     .about-me h2{
+
         font-size: 1.5rem;
+
         margin-bottom: 1rem;
+
     }
+
     .about-me p{
+
         font-size: 0.9rem;
+
         width: 450px;
+
     }
+
     .experiences .timeline-information {
+
         padding: 1.2rem 0.6rem;
+
         border-left: 2.6rem;
+
     }
+
     .experiences{
+
         margin-left: 7rem;
+
     }
+
     .experiences h3{
+
         margin-top: 1rem;
+
         font-size: 1.4rem;
+
     }
+
     
+
     .experiences p{
+
         line-height: 1.8rem;
+
         font-size: 1rem;
+
     }
+
 }
+
+
 
 @media screen and (max-width:800px) {
+
     .container-emphasis {
+
         flex-direction: column-reverse;
+
         margin-top: 240px;
+
     }
+
+
 
     .home-img {
+
         width: 400px;
+
         height: 400px;
+
         margin-bottom: 40px;
+
     }
+
+
 
     .home-text h1 {
+
         font-size: 3.8rem;
+
     }
+
     
+
     .home-text p {
+
         font-size: 1rem;
+
         width: 600px;
+
     }
+
+
 
     .home-text span {
+
         font-size: 16px;
+
     }
+
+
 
     .container-about-me {
+
         flex-direction: column;
+
         margin-top: 210px;
-    }
-    
-    .container-about-me img {
-        width: 400px;
+
     }
 
-    .about-me {
-        margin-top: 40px;
-    }
-    .about-me h4{
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
     
+
+    .container-about-me img {
+
+        width: 400px;
+
+    }
+
+
+
+    .about-me {
+
+        margin-top: 40px;
+
+    }
+
+    .about-me h4{
+
+        font-size: 1rem;
+
+        margin-bottom: 1rem;
+
+    }
+
+    
+
     .about-me h2{
+
         font-size: 1.8rem;
+
         margin-bottom: 1.1rem;
+
         max-width: 580px;
+
     }
+
     .about-me p{
+
         width: 600px;
+
     }
+
+
 
     .stats-section {
+
     flex-direction: column;
+
     gap: 20px;
+
     margin-top: 18rem;
+
     max-width: 100%;
+
 }
+
 }
+
+
 
 @media screen and (max-width:746px) {
+
     .container-emphasis .home-img {
+
         margin-top: 50px;
+
     }
+
     .experiences{
+
         margin-left: 5rem;
+
     }
+
     .experiences h3{
+
         margin-top: 1rem;
+
         font-size: 1.4rem;
+
     }
+
     .experiences p{
+
         line-height: 1.8rem;
+
         font-size: 1rem;
+
     }
+
 }
+
+
 
 @media screen and (max-width:600px) {
+
     .container-emphasis .home-img {
+
         margin-top: 120px;
+
     }
 
+
+
     .home-text h1 {
-        font-size: 3rem;
+
+        font-size: 2.5rem;
+
     }
+
     
+
     .home-text p {
-        font-size: 1rem;
-        width: 440px;
+
+        font-size: 0.95rem;
+
+        width: 100%;
+
+        max-width: 400px;
+
     }
+
+
 
     .home-text span {
+
         font-size: 13px;
-    }
-    
-    .container-about-me img {
-        margin-top: 100px;
-        width: 350px;
+
     }
 
-    .about-me {
-        margin-top: 40px;
-    }
-    .about-me h4{
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
     
+
+    .container-about-me img {
+
+        margin-top: 100px;
+
+        width: 100%;
+
+        max-width: 350px;
+
+    }
+
+
+
+    .about-me {
+
+        margin-top: 40px;
+
+        padding: 0 1rem;
+
+    }
+
+    .about-me h4{
+
+        font-size: 1rem;
+
+        margin-bottom: 1rem;
+
+    }
+
+    
+
     .about-me h2{
-        font-size: 1.8rem;
+
+        font-size: 1.6rem;
+
         margin-bottom: 1.1rem;
-        max-width: 550px;
+
+        max-width: 100%;
+
     }
+
     .about-me p{
+
         font-size: 0.9rem;
-        width: 500px;
+
+        width: 100%;
+
+        max-width: 400px;
+
     }
+
     .fixed-icon {
+
         display: none;
+
     }
+
 }
+
+
 
 @media screen and (max-width:550px) {
+
     .container-emphasis .home-img {
+
         margin-top: 0px;
+
     }
+
+
 
     .container-about-me img {
+
         margin-top: 0px;
+
+        width: 100%;
+
+        max-width: 320px;
+
     }
+
+
 
     .about-me {
+
         margin-top: 30px;
+
+        padding: 0 1rem;
+
     }
 
+
+
     .about-me h2{
-        font-size: 1.5rem;
-        max-width: 400px;
-    }
-    .about-me p{
-        width: 430px;
-    }
-    .experiences{
-        margin-left: 3rem;
-        padding: 0 3rem 2rem 1.5rem;
-    }
-    .experiences .icons-timeline{ 
-        left: -2.2rem;
-        height:4rem;
-        width: 4rem;
-        border-radius: 50%;
-        line-height: 4rem;
-        font-size: 2rem;
-    }
-    .experiences span {
-        margin-left: 1rem;
-    }
-    .experiences h3{
-        margin-top: 0.9rem;
+
         font-size: 1.4rem;
+
+        max-width: 100%;
+
     }
+
+    .about-me p{
+
+        width: 100%;
+
+        max-width: 350px;
+
+    }
+
+    .experiences{
+
+        margin-left: 2rem;
+
+        padding: 0 2rem 2rem 1rem;
+
+    }
+
+    .experiences .icons-timeline{ 
+
+        left: -2.2rem;
+
+        height:4rem;
+
+        width: 4rem;
+
+        border-radius: 50%;
+
+        line-height: 4rem;
+
+        font-size: 2rem;
+
+    }
+
+    .experiences span {
+
+        margin-left: 1rem;
+
+    }
+
+    .experiences h3{
+
+        margin-top: 0.9rem;
+
+        font-size: 1.2rem;
+
+    }
+
     .experiences p{
+
         line-height: 1.5rem;
-        font-size: 1rem;
+
+        font-size: 0.9rem;
+
     }
+
     .forms-contact input {
-        width: 380px;
+
+        width: 100%;
+
+        max-width: 350px;
+
         padding: 10px 12px;
+
         height: 50px;
+
     }
+
     .forms-contact textarea {
-        width: 380px;
+
+        width: 100%;
+
+        max-width: 350px;
+
         padding: 10px 12px;
+
     }
+
     .forms-contact button {
-        width: 380px;
+
+        width: 100%;
+
+        max-width: 350px;
+
         height: 3rem;
+
         font-size: 1rem;
+
     }
+
 }
+
+
 
 @media screen and (max-width:480px) {
+
     .container-about-me img {
-        width: 360px;
+
+        width: 100%;
+
+        max-width: 340px;
+
     }
+
     .about-me {
+
         margin-top: 25px;
+
+        padding: 0 1rem;
+
     }
+
     .about-me h4{
+
         font-size: 0.9rem;
+
         margin-bottom: 0.5rem;
+
     }
+
     .about-me h2{
+
         margin-bottom: 0.9rem;
-        max-width: 390px;
+
+        max-width: 100%;
+
     }
+
     .about-me p{
-        font-size: 1rem;
-        width: 400px;
+
+        font-size: 0.95rem;
+
+        width: 100%;
+
+        max-width: 340px;
+
     }
+
 }
+
+
 
 @media screen and (max-width:450px) {
+
     .home-img {
-        width: 350px;
-        height: 350px;
+
+        width: 100%;
+
+        max-width: 300px;
+
+        height: 300px;
+
         margin-bottom: 30px;
+
     }
+
+
 
     .home-text h1 {
-        font-size: 2.6rem;
-    }
-    
-    .home-text p {
-        font-size: 0.9rem;
-        width: 400px;
+
+        font-size: 2.2rem;
+
     }
 
-    .about-me {
-        margin-top: 25px;
-    }
-    .about-me h4{
-        font-size: 1rem;
-        margin-bottom: 0.5rem;
-    }
     
+
+    .home-text p {
+
+        font-size: 0.9rem;
+
+        width: 100%;
+
+        max-width: 320px;
+
+    }
+
+
+
+    .about-me {
+
+        margin-top: 25px;
+
+        padding: 0 1rem;
+
+    }
+
+    .about-me h4{
+
+        font-size: 1rem;
+
+        margin-bottom: 0.5rem;
+
+    }
+
+    
+
     .about-me h2{
+
         font-size: 1.2rem;
+
         margin-bottom: 0.9rem;
-        max-width: 350px;
+
+        max-width: 100%;
+
     }
+
     .about-me p{
-        font-size: 0.8rem;
-        width: 420px;
+
+        font-size: 0.85rem;
+
+        width: 100%;
+
+        max-width: 320px;
+
     }
+
     .container-secondary-contact img {
-        width: 340px;
+
+        width: 100%;
+
+        max-width: 300px;
+
     }
+
 }
+
+
 
 @media screen and (max-width:414px) {
+
     .home-text {
-        margin-left: 10px;
+
+        margin-left: 0;
+
+        padding: 0 1rem;
+
     }
+
     .home-text p {
-        width: 370px;
+
+        width: 100%;
+
+        max-width: 300px;
+
     }
+
+
 
     .about-me {
-        margin-left: 6px;
-    }
-    .about-me p {
-        width: 350px;
-    }
-    .container-secondary-contact img {
-        width: 320px;
-    }
-    .forms-contact input {
-        width: 320px;
-    }
-    .forms-contact textarea {
-        width: 320px;
-    }
-    .forms-contact button {
-        width: 320px;
+
+        margin-left: 0;
+
+        padding: 0 1rem;
 
     }
+
+    .about-me p {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+    .container-secondary-contact img {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+    .forms-contact input {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+    .forms-contact textarea {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+    .forms-contact button {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
 }
+
+
 
 @media screen and (max-width:390px) {
+
     .container-emphasis {
+
         margin-top: 130px;
+
+        padding: 0 1rem;
+
     }
 
+
+
     .home-img {
-        width: 350px;
-        height: 350px;
+
+        width: 100%;
+
+        max-width: 280px;
+
+        height: 280px;
+
         margin-bottom: 30px;
+
     }
+
+
 
     .home {
-        margin-left: 8px;
+
+        margin-left: 0;
+
+        padding: 0 1rem;
+
     }
+
+
 
     .home-text h1 {
-        font-size: 2.4rem;
+
+        font-size: 2rem;
+
     }
+
     
+
     .home-text p {
-        font-size: 0.9rem;
-        width: 350px;
+
+        font-size: 0.85rem;
+
+        width: 100%;
+
+        max-width: 280px;
+
     }
+
+
 
     .two {
-        margin-left: 10px;
+
+        margin-left: 0;
+
     }
+
+
 
     .container-about-me {
+
         margin-top: 180px;
+
+        padding: 0 1rem;
+
     }
+
+
 
     .container-about-me img {
-        width: 380px;
+
+        width: 100%;
+
+        max-width: 280px;
+
     }
 
+
+
     .about-me {
+
         margin-top: 25px;
+
+        padding: 0 1rem;
+
     }
+
     .about-me h4{
+
         font-size: 1rem;
+
         margin-bottom: 0.5rem;
+
     }
+
     
+
     .about-me h2{
-        font-size: 1.2rem;
+
+        font-size: 1.1rem;
+
         margin-bottom: 0.9rem;
-        max-width: 300px;
+
+        max-width: 100%;
+
     }
+
     .about-me p{
+
         font-size: 0.8rem;
-        width: 350px;
+
+        width: 100%;
+
+        max-width: 280px;
+
     }
+
 }
+
+
 
 @media screen and (max-width:378px) {
+
     .box-projects {
-        width: 300px;
+
+        width: 100%;
+
+        max-width: 280px;
+
     }
+
     .box-projects .image-project {
+
         height: 10rem;
+
     }
+
     .box-projects h3 {
+
         font-size: 1.5rem;
+
         margin-bottom: 8px;
+
     }
+
     .box-projects p {
-        width: 280px;
+
+        width: 100%;
+
+        max-width: 260px;
+
     }
+
     .button-and-icons-container {
+
         gap: 15px;
+
     }
+
 }
 
+
+
 @media screen and (max-width:360px) {
+
     .home-img {
-        width: 300px;
-        height: 300px;
+
+        width: 100%;
+
+        max-width: 260px;
+
+        height: 260px;
+
         margin-bottom: 30px;
+
     }
+
+
 
     .home-text {
-        margin-left: 10px;
+
+        margin-left: 0;
+
+        padding: 0 1rem;
+
     }
+
     .home-text p {
-        width: 330px;
+
+        width: 100%;
+
+        max-width: 260px;
+
     }
+
+
 
     .about-me {
-        margin-left: 6px;
-    }
-    .about-me p {
-        width: 300px;
+
+        margin-left: 0;
+
+        padding: 0 1rem;
+
     }
 
-    .bnt, .two {
-        margin-left: 70px;
-        margin-top: 10px;
+    .about-me p {
+
+        width: 100%;
+
+        max-width: 260px;
+
     }
+
+
+
+    .bnt, .two {
+
+        margin-left: 0;
+
+        margin-top: 10px;
+
+    }
+
 }
