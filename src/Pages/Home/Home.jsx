@@ -178,7 +178,7 @@ const Home = () => {
                     <article className="about-me">
                         <h4>Quem sou eu?</h4>
                         <h2>Lilian Carvalho, desenvolvedora Full-stack Jr.</h2>
-                        <p id="skills">Sou desenvolvedora web e atualmente estagiária no Itaú, aprendendo diariamente em um ambiente de grande crescimento. Trabalho principalmente com Angular, buscando interfaces acessíveis e funcionais. Tenho também experiência com backend em Python e Java, e contato com AWS, integrando diversos serviços. Foco, dedicação e atenção aos detalhes são algumas das características que me destacam.</p>
+                        <p id="skills">Sou desenvolvedora web e atualmente analista no Itaú, atuando diariamente em um ambiente de grande crescimento. Trabalho principalmente com Angular, buscando interfaces acessíveis e funcionais. Tenho também experiência com backend em Python e Java, e contato com AWS, integrando diversos serviços. Foco, dedicação e atenção aos detalhes são algumas das características que me destacam.</p>
                     </article>
                 </section>
                 <section className="container-skills">
@@ -220,7 +220,7 @@ const Home = () => {
                     </div>
                     <div className="timeline-boxes">
                         <div className="timeline-boxes-left">
-                            <BoxTimeline TitleTimeline={"2024 - Presente | Itaú Unibanco"} SubtitleTimeline={"DESENVOLVEDORA DE SOFTWARE"} DescriptionTimeline={"Início da jornada como estagiária, atuando com: Python, Django, Angular e diversos serviços AWS."} />
+                            <BoxTimeline TitleTimeline={"2024 - Presente | Itaú Unibanco"} SubtitleTimeline={"DESENVOLVEDORA DE SOFTWARE"} DescriptionTimeline={"Início como estagiária, agora como analista atuando com: Python, Django, Angular e diversos serviços AWS."} />
                             <BoxTimeline TitleTimeline={"2023 - 2023 | Djeli"} SubtitleTimeline={"CEO E CO-FUNDADORA"} DescriptionTimeline={"Atuei como CEO, representando os integrantes como porta voz da startup, além da identidade visual, e os códigos."} />
                             <BoxTimeline TitleTimeline={"2023 - 2023 | AfroGlow"} SubtitleTimeline={"PO, DESENVOLVEDORA E UI/UX"} DescriptionTimeline={"Gerenciei as tarefas do time, usamos metodologias agéis, fui dev full-stack e trabalhei na identidade visual da startup."} />
                         </div>
