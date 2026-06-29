@@ -5,11 +5,33 @@
     max-width: 500px;
     border-radius: 15px;
     margin-left: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .box-timeline:hover {
     box-shadow: var(--main-color) 0px 1px 15px;
     transition: 0.8s;
+}
+
+.box-timeline.current-position {
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 20px rgba(105, 50, 245, 0.3);
+}
+
+.current-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: linear-gradient(90deg, var(--main-color), #b293ff);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(105, 50, 245, 0.4);
 }
 
 

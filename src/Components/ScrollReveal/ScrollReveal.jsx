@@ -27,7 +27,9 @@ const ScrollRevealComponent = () => {
     sr.reveal('.container-skills h2', { delay: 290, origin: 'top' });
     sr.reveal('.skills', { delay: 320, origin: 'left' });
 
-    sr.reveal('.timeline', { delay: 320, origin: 'right' });
+    sr.reveal('.container-awards', { delay: 330, origin: 'top' });
+
+    sr.reveal('.timeline', { delay: 360, origin: 'right' });
 
     sr.reveal('.container-portfolio', { delay: 420, origin: 'left' });
     sr.reveal('.container-contact', { delay: 300, origin: 'top' });

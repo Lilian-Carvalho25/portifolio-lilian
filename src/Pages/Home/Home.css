@@ -498,6 +498,138 @@ header.sticky {
 
 
 
+/* PREMIAÇÕES */
+
+.container-awards {
+
+    max-width: 1326px;
+
+    margin: 0 auto;
+
+    padding: 5rem 2rem;
+
+    position: relative;
+
+}
+
+.container-awards::before {
+
+    content: '';
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+
+    height: 600px;
+
+    background: radial-gradient(circle, rgba(105, 50, 245, 0.08) 0%, transparent 70%);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 0;
+
+}
+
+.container-awards h2 {
+
+    text-align: center;
+
+    font-size: 2rem;
+
+    margin-bottom: 0.5rem;
+
+    background: linear-gradient(90deg, var(--main-color), #b293ff);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+.container-awards h4 {
+
+    color: var(--main-color);
+
+    font-size: 1rem;
+
+    margin-bottom: 2rem;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+.awards-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+@media (max-width: 1024px) {
+
+    .awards-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 1.5rem;
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .awards-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.5rem;
+
+    }
+
+    .container-awards h2 {
+
+        font-size: 1.6rem;
+
+    }
+
+}
+
+
+
 /* NÚMEROS GRANDES */
 
 .stats-section {
@@ -580,7 +712,7 @@ header.sticky {
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-start;
 
     justify-content: space-evenly;
 
@@ -624,11 +756,7 @@ header.sticky {
 
     flex-direction: column;
 
-    justify-content: center; 
-
     gap: 1.3rem;
-
-    padding-bottom: 11.6rem;
 
 }
 
@@ -639,8 +767,6 @@ header.sticky {
     display: flex;
 
     flex-direction: column;
-
-    justify-content: center; 
 
     gap: 1.3rem;
 
@@ -752,6 +878,12 @@ header.sticky {
 
     color: var(--text-color);
 
+}
+
+.forms-contact input::placeholder,
+.forms-contact textarea::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
 }
 
 .forms-contact textarea, .forms-contact textarea:focus {

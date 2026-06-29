@@ -22,6 +22,8 @@ const lightTheme = {
 
     logoImage: logoLight,
 
+    formBackground: '#ffffff',
+
   };
 
   
@@ -35,6 +37,8 @@ const darkTheme = {
     NavBackgroundScroll: '#1b1c1d',
 
     logoImage: logoDark,
+
+    formBackground: '#212121',
 
   };
 

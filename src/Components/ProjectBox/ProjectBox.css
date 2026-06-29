@@ -94,9 +94,20 @@
     margin: 12px 0px;
 }
 .hang-tags {
-    font-size: 13px;
-    border:  1px solid #757575;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid rgba(105, 50, 245, 0.3);
+    background: rgba(105, 50, 245, 0.05);
     text-align: center;
-    border-radius: 8px;
-    padding: 3px;
+    border-radius: 20px;
+    padding: 4px 12px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+}
+
+.hang-tags:hover {
+    border-color: rgba(105, 50, 245, 0.6);
+    background: rgba(105, 50, 245, 0.1);
+    transform: translateY(-2px);
 }

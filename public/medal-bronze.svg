@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="bronzeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8A862"/>
+      <stop offset="25%" style="stop-color:#CD7F32"/>
+      <stop offset="50%" style="stop-color:#E8A862"/>
+      <stop offset="75%" style="stop-color:#CD7F32"/>
+      <stop offset="100%" style="stop-color:#E8A862"/>
+    </linearGradient>
+    <linearGradient id="bronzeInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB366"/>
+      <stop offset="50%" style="stop-color:#E8A862"/>
+      <stop offset="100%" style="stop-color:#CD7F32"/>
+    </linearGradient>
+    <linearGradient id="bronzeStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB366"/>
+      <stop offset="100%" style="stop-color:#CD7F32"/>
+    </linearGradient>
+    <filter id="bronzeShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#CD7F32" flood-opacity="0.5"/>
+    </filter>
+    <filter id="bronzeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="40" cy="40" r="36" fill="url(#bronzeGradient)" filter="url(#bronzeShadow)"/>
+  <circle cx="40" cy="40" r="30" fill="url(#bronzeInner)" stroke="#A0522D" stroke-width="2.5"/>
+  <circle cx="40" cy="40" r="24" fill="none" stroke="#CD7F32" stroke-width="1" opacity="0.5"/>
+  <path d="M40 18 L44 30 L57 30 L47 38 L51 50 L40 43 L29 50 L33 38 L23 30 L36 30 Z" fill="url(#bronzeStar)" stroke="#A0522D" stroke-width="1.5" filter="url(#bronzeGlow)"/>
+  <circle cx="40" cy="35" r="6" fill="#FFB366" stroke="#A0522D" stroke-width="1"/>
+  <path d="M35 40 L40 45 L45 40" stroke="#A0522D" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="40" cy="40" r="36" fill="none" stroke="url(#bronzeGradient)" stroke-width="2" stroke-dasharray="10 5" opacity="0.4"/>
+  <circle cx="40" cy="40" r="32" fill="none" stroke="#CD7F32" stroke-width="1" stroke-dasharray="5 3" opacity="0.3"/>
+</svg>
