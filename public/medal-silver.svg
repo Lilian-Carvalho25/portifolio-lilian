@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="silverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E8E8"/>
+      <stop offset="25%" style="stop-color:#C0C0C0"/>
+      <stop offset="50%" style="stop-color:#E8E8E8"/>
+      <stop offset="75%" style="stop-color:#C0C0C0"/>
+      <stop offset="100%" style="stop-color:#E8E8E8"/>
+    </linearGradient>
+    <linearGradient id="silverInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="50%" style="stop-color:#F5F5F5"/>
+      <stop offset="100%" style="stop-color:#E8E8E8"/>
+    </linearGradient>
+    <linearGradient id="silverStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F0F0"/>
+      <stop offset="100%" style="stop-color:#C0C0C0"/>
+    </linearGradient>
+    <filter id="silverShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#C0C0C0" flood-opacity="0.5"/>
+    </filter>
+    <filter id="silverGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="40" cy="40" r="36" fill="url(#silverGradient)" filter="url(#silverShadow)"/>
+  <circle cx="40" cy="40" r="30" fill="url(#silverInner)" stroke="#A0A0A0" stroke-width="2.5"/>
+  <circle cx="40" cy="40" r="24" fill="none" stroke="#C0C0C0" stroke-width="1" opacity="0.5"/>
+  <path d="M40 18 L44 30 L57 30 L47 38 L51 50 L40 43 L29 50 L33 38 L23 30 L36 30 Z" fill="url(#silverStar)" stroke="#A0A0A0" stroke-width="1.5" filter="url(#silverGlow)"/>
+  <circle cx="40" cy="35" r="6" fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1"/>
+  <path d="M35 40 L40 45 L45 40" stroke="#A0A0A0" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="40" cy="40" r="36" fill="none" stroke="url(#silverGradient)" stroke-width="2" stroke-dasharray="10 5" opacity="0.4"/>
+  <circle cx="40" cy="40" r="32" fill="none" stroke="#C0C0C0" stroke-width="1" stroke-dasharray="5 3" opacity="0.3"/>
+</svg>

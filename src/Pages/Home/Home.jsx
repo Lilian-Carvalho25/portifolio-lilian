@@ -16,6 +16,8 @@ import SkillBoxes from "../../Components/SkillBoxes/SkillBoxes";
 
 import BoxTimeline from "../../Components/BoxTimeline/BoxTimeline";
 
+import AwardCard from "../../Components/AwardCard/AwardCard";
+
 import linkedinImg from '../../../public/icon-person.svg';
 
 import locationImg from '../../../public/icon-map.svg';
@@ -238,6 +240,8 @@ const Home = () => {
 
                         <li><a href="#skills" style={{ color: theme.text }}>Skills</a></li>
 
+                        <li><a href="#awards" style={{ color: theme.text }}>Premiações</a></li>
+
                         <li><a href="#timeline" style={{ color: theme.text }}>Educação</a></li>
 
                         <li><a href="#portfolio" style={{ color: theme.text }}>Portfólio</a></li>
@@ -414,6 +418,33 @@ const Home = () => {
 
                 </section>
 
+                <section className="container-awards" id="awards">
+                    <h4>Minhas</h4>
+                    <h2>Premiações</h2>
+                    <div className="awards-grid">
+                        <AwardCard 
+                            medalType="gold" 
+                            title="Hackathon Djeli | 2023" 
+                            description="Promovido pela Fiesp em parceria com a uni. Zumbi dos Palmares - Desconstruindo o racismo nas relações digitais." 
+                        />
+                        <AwardCard 
+                            medalType="gold" 
+                            title="Proa AfroGlow | 2023" 
+                            description="Projeto de final de curso do Proa, a AfroGlow ganhou o prêmio de Demoday destaque entre outros 20 grupos." 
+                        />
+                        <AwardCard 
+                            medalType="silver" 
+                            title="Al. Destaque | 2023" 
+                            description="Aluna destaque do curso de Dev Web Full Stack do Proa, tive o prazer e a honra de ser uma das escolhidas entre 150 alunos." 
+                        />
+                        <AwardCard 
+                            medalType="bronze" 
+                            title="Hackathon Itaú | 2026" 
+                            description="Desafio de inovação pelo Itaú, para solucionar questões internos. Eu e o meu grupo levamos a medalha de bronze." 
+                        />
+                    </div>
+                </section>
+
                 <section className="timeline" id="timeline">
 
                     <div className="timeline-title">
@@ -439,7 +470,7 @@ const Home = () => {
                     <div className="timeline-boxes">
 
                         <div className="timeline-boxes-left">
-                            <BoxTimeline TitleTimeline={"2024 - Presente | Itaú Unibanco"} SubtitleTimeline={"DESENVOLVEDORA DE SOFTWARE"} DescriptionTimeline={"Início como estagiária, agora como analista atuando com: Python, Django, Angular e diversos serviços AWS."} />
+                            <BoxTimeline TitleTimeline={"2024 - Presente | Itaú Unibanco"} SubtitleTimeline={"DESENVOLVEDORA DE SOFTWARE"} DescriptionTimeline={"Início como estagiária, agora como analista atuando com: Python, Django, Angular e diversos serviços AWS."} isCurrent={true} />
                             <BoxTimeline TitleTimeline={"2023 - 2023 | Djeli"} SubtitleTimeline={"CEO E CO-FUNDADORA"} DescriptionTimeline={"Atuei como CEO, representando os integrantes como porta voz da startup, além da identidade visual, e os códigos."} />
 
                             <BoxTimeline TitleTimeline={"2023 - 2023 | AfroGlow"} SubtitleTimeline={"PO, DESENVOLVEDORA E UI/UX"} DescriptionTimeline={"Gerenciei as tarefas do time, usamos metodologias agéis, fui dev full-stack e trabalhei na identidade visual da startup."} />
@@ -450,6 +481,8 @@ const Home = () => {
 
                             <BoxTimeline TitleTimeline={"2024 - 2026 | Faculdade IMPACTA"} SubtitleTimeline={"A. E DESENVOLVIMENTO DE SISTEMAS"} DescriptionTimeline={"Gradução que forma profissionais aptos a projetar, analisar, desenvolver e implementar sistemas de informação."} />
 
+                            <BoxTimeline TitleTimeline={"2026 | Senac"} SubtitleTimeline={"FUNDAMENTOS EM AWS - CERTIFICAÇÃO"} DescriptionTimeline={"Capacita em conceitos de nuvem AWS, cobrindo arquitetura, segurança, serviços essenciais, computação e preços."} />
+                            
                             <BoxTimeline TitleTimeline={"2023 | Instituto Proa"} SubtitleTimeline={"DESENVOLVEDOR WEB JAVA"} DescriptionTimeline={"Curso focado em empregabilidade, onde o jovem é preparado nos núcleos técnico e comportamental."} />
 
                             <BoxTimeline TitleTimeline={"2023 | Escola da nuvem"} SubtitleTimeline={"FUNDAMENTOS EM AWS"} DescriptionTimeline={"Tópicos projetados para fornecer uma compreensão básico dos serviços e conceitos essenciais da AWS."} />
@@ -506,11 +539,11 @@ const Home = () => {
 
                             <form ref={ref} onSubmit={handleSubmit} className="forms-contact">
 
-                                <input type="text" placeholder="Nome" name="name" style={{ background: theme.skillsBackground }}></input>
+                                <input type="text" placeholder="Nome" name="name" style={{ background: theme.formBackground }}></input>
 
-                                <input type="email" placeholder="Email" name="email" style={{ background: theme.skillsBackground }}></input>
+                                <input type="email" placeholder="Email" name="email" style={{ background: theme.formBackground }}></input>
 
-                                <textarea placeholder="Mensagem"name="message" rows={7} style={{ background: theme.skillsBackground }   }></textarea>
+                                <textarea placeholder="Mensagem"name="message" rows={7} style={{ background: theme.formBackground }   }></textarea>
 
                                 <button type="submit">ENVIAR</button>
 

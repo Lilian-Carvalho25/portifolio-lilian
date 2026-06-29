@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="25%" style="stop-color:#FFA500"/>
+      <stop offset="50%" style="stop-color:#FFD700"/>
+      <stop offset="75%" style="stop-color:#FFA500"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </linearGradient>
+    <linearGradient id="goldInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF5CC"/>
+      <stop offset="50%" style="stop-color:#FFED4A"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </linearGradient>
+    <linearGradient id="goldStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE44D"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </linearGradient>
+    <filter id="goldShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#FFD700" flood-opacity="0.5"/>
+    </filter>
+    <filter id="goldGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="40" cy="40" r="36" fill="url(#goldGradient)" filter="url(#goldShadow)"/>
+  <circle cx="40" cy="40" r="30" fill="url(#goldInner)" stroke="#FFA500" stroke-width="2.5"/>
+  <circle cx="40" cy="40" r="24" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+  <path d="M40 18 L44 30 L57 30 L47 38 L51 50 L40 43 L29 50 L33 38 L23 30 L36 30 Z" fill="url(#goldStar)" stroke="#FFA500" stroke-width="1.5" filter="url(#goldGlow)"/>
+  <circle cx="40" cy="35" r="6" fill="#FFF5CC" stroke="#FFA500" stroke-width="1"/>
+  <path d="M35 40 L40 45 L45 40" stroke="#FFA500" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="40" cy="40" r="36" fill="none" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="10 5" opacity="0.4"/>
+  <circle cx="40" cy="40" r="32" fill="none" stroke="#FFD700" stroke-width="1" stroke-dasharray="5 3" opacity="0.3"/>
+</svg>

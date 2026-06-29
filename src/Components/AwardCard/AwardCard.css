@@ -1,0 +1,246 @@
+@keyframes shimmer {
+    0% {
+        background-position: -200% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.05);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1) rotate(180deg);
+    }
+}
+
+.award-card {
+    background: linear-gradient(135deg, rgba(27, 27, 33, 0.95) 0%, rgba(40, 40, 50, 0.95) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem 2rem;
+    border-radius: 24px;
+    min-height: 300px;
+    width: 100%;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(105, 50, 245, 0.15);
+    backdrop-filter: blur(15px);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.award-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: left 0.8s ease;
+    pointer-events: none;
+}
+
+.award-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(105, 50, 245, 0.08) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.award-card:hover::before {
+    left: 100%;
+}
+
+.award-card:hover::after {
+    opacity: 1;
+}
+
+.award-card:hover {
+    box-shadow: 
+        0 20px 60px rgba(105, 50, 245, 0.4),
+        0 0 0 2px rgba(105, 50, 245, 0.3),
+        0 0 40px rgba(105, 50, 245, 0.2),
+        inset 0 0 30px rgba(105, 50, 245, 0.1);
+    transform: translateY(-12px) rotateX(5deg) rotateY(-5deg);
+}
+
+.medal-wrapper {
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 2;
+    animation: float 4s ease-in-out infinite;
+}
+
+.medal-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(105, 50, 245, 0.25) 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.award-card:hover .medal-wrapper::before {
+    opacity: 1;
+}
+
+.medal-wrapper::after {
+    content: '✦';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 16px;
+    color: var(--main-color);
+    opacity: 0;
+    animation: sparkle 2s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.award-card:hover .medal-wrapper::after {
+    opacity: 1;
+}
+
+.medal-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 3;
+}
+
+.award-card:hover .medal-icon {
+    transform: scale(1.15) rotate(10deg) translateY(-5px);
+    filter: drop-shadow(0 12px 24px rgba(105, 50, 245, 0.5));
+}
+
+.award-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0 0.6rem 0;
+    text-align: center;
+    background: linear-gradient(90deg, #fff, #e0e0e0, #fff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.award-card.light-theme h3 {
+    background: linear-gradient(90deg, #333, #666, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.award-card:hover h3 {
+    animation: shimmer 3s linear infinite;
+}
+
+.award-card p {
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0.65;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    max-width: 90%;
+}
+
+.award-card:hover p {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.award-card .sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--main-color);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.award-card:hover .sparkle {
+    opacity: 1;
+    animation: sparkle 1.5s ease-in-out infinite;
+}
+
+.award-card .sparkle:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.award-card .sparkle:nth-child(2) {
+    top: 20%;
+    right: 20%;
+    animation-delay: 0.3s;
+}
+
+.award-card .sparkle:nth-child(3) {
+    bottom: 30%;
+    left: 15%;
+    animation-delay: 0.6s;
+}
+
+.award-card .sparkle:nth-child(4) {
+    bottom: 30%;
+    right: 15%;
+    animation-delay: 0.9s;
+}
